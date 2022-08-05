@@ -7,7 +7,7 @@ n_filters: &n_filters 256
 
 model:
   train_ds:
-    manifest_filepath: /tmp/manifest/
+    manifest_filepath: null
     sample_rate: 16000
     labels: null
     batch_size: 64
@@ -17,7 +17,7 @@ model:
     tarred_shard_strategy: "scatter"
 
   validation_ds:
-    manifest_filepath: /tmp/manifest/
+    manifest_filepath: null
     sample_rate: 16000
     labels: null
     batch_size: 128
